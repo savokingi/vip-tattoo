@@ -14,7 +14,7 @@
   "@context": "https://schema.org",
   "@type": "TattooParlor",
   "name": "Студия татуировки VIP Tattoo Омск",
-  "image": "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=1200&q=80",
+  "image": "assets/img/ph00.jpg",
   "telephone": "+7 (900) 000-00-00",
   "address": {
     "@type": "PostalAddress",
@@ -55,7 +55,7 @@
   --ease:cubic-bezier(.22,.75,.28,1);
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;overflow-x:clip}
+html{scroll-behavior:smooth;overflow-x:clip;scroll-padding-top:88px;scroll-margin-top:88px}
 html:has(#menuToggle:checked){overflow:hidden}
 body{
   background:var(--ink);
@@ -146,10 +146,11 @@ header.hidden{transform:translateY(-100%)}
 }
 .brand b{font-family:'Oswald';font-size:16px;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
 .brand small{display:block;font-size:9px;letter-spacing:.4em;color:var(--mut);text-transform:uppercase}
-nav.desk{display:flex;gap:30px}
+nav.desk{display:flex;gap:20px;flex-wrap:nowrap}
 nav.desk a{
-  font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);
   transition:color .3s;position:relative;padding:6px 0;font-weight:500;
+  white-space:nowrap;
 }
 nav.desk a::after{
   content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;
@@ -182,7 +183,11 @@ nav.desk a:hover::after{transform:scaleX(1);transform-origin:left}
 
 /* Mobile burger */
 #menuToggle{display:none}
-.burger{display:none;width:44px;height:44px;flex-direction:column;justify-content:center;gap:7px;cursor:pointer;z-index:130;position:relative}
+.burger{
+  display:none;width:44px;height:44px;flex-direction:column;justify-content:center;gap:7px;
+  cursor:pointer;position:fixed;top:18px;right:clamp(14px,3.4vw,34px);
+  z-index:140;
+}
 .burger span{display:block;height:1.5px;background:#ececea;transition:.4s var(--ease)}
 .burger span:nth-child(1){width:30px}
 .burger span:nth-child(2){width:20px;margin-left:10px}
@@ -193,11 +198,11 @@ html.menu-open{overflow:hidden}
 .mnav{
   position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;
   background:#09090b;
-  z-index:120;display:flex;flex-direction:column;justify-content:center;padding:0 8vw;gap:6px;
+  z-index:120;display:flex;flex-direction:column;justify-content:center;padding:12vh 8vw 10vh;gap:4px;
   clip-path:circle(0 at calc(100% - 40px) 40px);
   -webkit-clip-path:circle(0 at calc(100% - 40px) 40px);
   transition:clip-path .7s var(--ease),-webkit-clip-path .7s var(--ease);
-  visibility:hidden;
+  visibility:hidden;overflow-y:auto;
 }
 #menuToggle:checked ~ .mnav{
   clip-path:circle(150% at calc(100% - 40px) 40px);
@@ -552,13 +557,17 @@ footer{border-top:1px solid var(--line);padding:44px 0 110px;position:relative;o
 .sticky-cta .alt svg{width:21px;height:21px}
 
 /* Responsive queries */
+@media(max-width:1120px){
+  nav.desk,.head-cta .ph,.head-cta > .btn{display:none}
+  .burger{display:flex}
+  .sticky-cta{display:flex}
+  footer{padding-bottom:130px}
+}
 @media(max-width:1080px){
   .mgrid{grid-template-columns:repeat(2,1fr)}
   .calc-grid{grid-template-columns:1fr}
 }
 @media(max-width:920px){
-  nav.desk,.head-cta .ph,.head-cta > .btn{display:none}
-  .burger{display:flex}
   .about-grid,.rev-layout,.c-grid{grid-template-columns:1fr}
   .rev-score{position:static}
   .about-photo{max-width:440px}
@@ -576,18 +585,23 @@ footer{border-top:1px solid var(--line);padding:44px 0 110px;position:relative;o
   .g10{grid-column:4/7;grid-row:span 3}
   .g11{grid-column:1/7;grid-row:span 4}
   .g12{display:none}
-  .sticky-cta{display:flex}
-  footer{padding-bottom:130px}
 }
 @media(max-width:560px){
   .mgrid{grid-template-columns:1fr}
   .mcard{min-height:0;padding:26px}
   .mcard .quote{max-height:none;opacity:1}
   .hero-sub{gap:20px}
-  .hero h1{font-size:clamp(48px,14vw,84px)}
+  .hero h1{font-size:clamp(44px,13vw,84px)}
   .mrow{flex-wrap:wrap;row-gap:2px}
   .mrow .ds{display:none}
   .stats{gap:22px}
+  .hero-in{padding-top:118px}
+  .hero .kicker{letter-spacing:.22em;padding:9px 14px}
+  .rev-layout{gap:28px}
+  .rev-score .big{font-size:clamp(104px,28vw,150px)}
+  .filter-bar{gap:8px}
+  .filter-btn{padding:7px 14px;font-size:10px;letter-spacing:.16em}
+  .mnav a.mlink{font-size:26px;letter-spacing:.01em;gap:12px;padding:4px 0}
 }
 
 /* Scroll reveals (IntersectionObserver fallback) */
@@ -631,10 +645,12 @@ html.anim .divider.is-in svg{opacity:1;transform:translate(-50%,-50%) rotate(-14
     <div class="head-cta">
       <a class="ph" href="tel:+79000000000">+7 (900) 000-00-00</a>
       <a class="btn sm solid magnet" href="https://vk.com/viptat2" target="_blank" rel="noopener">Записаться</a>
-      <label class="burger" for="menuToggle" aria-label="Открыть меню"><span></span><span></span></label>
     </div>
   </div>
 </header>
+
+<!-- Burger для мобильного меню — вне header, чтобы не блокироваться оверлеем меню -->
+<label class="burger" for="menuToggle" aria-label="Открыть меню"><span></span><span></span></label>
 
 <!-- Mobile Navigation -->
 <input type="checkbox" id="menuToggle" aria-hidden="true" tabindex="-1">
@@ -658,7 +674,7 @@ html.anim .divider.is-in svg{opacity:1;transform:translate(-50%,-50%) rotate(-14
   <!-- Interactive Ink Smoke Canvas -->
   <canvas id="heroCanvas"></canvas>
   <div class="hero-bg">
-    <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=2000&q=85" alt="Процесс создания татуировки в VIP Tattoo Омск" fetchpriority="high">
+    <img src="assets/img/ph00.jpg" alt="Студия VIP Tattoo в Омске — процесс работы тату-мастера" fetchpriority="high">
   </div>
   <span class="hero-55" aria-hidden="true">VIP</span>
   <div class="hero-in">
@@ -725,7 +741,7 @@ html.anim .divider.is-in svg{opacity:1;transform:translate(-50%,-50%) rotate(-14
       <figure class="about-photo" data-io>
         <span class="badge55" aria-hidden="true">55</span>
         <div class="frame">
-          <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1000&q=80" alt="Интерьер и рабочие места VIP Tattoo Омск" loading="lazy" data-prlx>
+          <img src="assets/img/ph01.jpg" alt="Интерьер и рабочие места студии VIP Tattoo Омск" loading="lazy" data-prlx>
         </div>
         <figcaption><span>БЦ «Гостиный двор»</span><span>пр. Карла Маркса, 32</span></figcaption>
       </figure>
@@ -789,9 +805,9 @@ html.anim .divider.is-in svg{opacity:1;transform:translate(-50%,-50%) rotate(-14
 
   <!-- Floating preview images following cursor -->
   <div class="mprev" aria-hidden="true">
-    <img data-for="tattoo"   src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=600&q=80" alt="">
-    <img data-for="piercing" src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?auto=format&fit=crop&w=600&q=80" alt="">
-    <img data-for="laser"    src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&w=600&q=80" alt="">
+    <img data-for="tattoo"   src="assets/img/ph02.jpg" alt="">
+    <img data-for="piercing" src="assets/img/ph03.jpg" alt="">
+    <img data-for="laser"    src="assets/img/ph04.jpg" alt="">
   </div>
 </section>
 
@@ -864,18 +880,18 @@ html.anim .divider.is-in svg{opacity:1;transform:translate(-50%,-50%) rotate(-14
     </div>
 
     <div class="ggrid">
-      <figure class="gitem g1" data-cat="realism" data-cap="Реализм · Черно-белый портрет" data-io><img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=1000&q=80" alt="Татуировка в стиле реализм" loading="lazy"></figure>
-      <figure class="gitem g2" data-cat="graphics" data-cap="Графика · Геометрия и орнамент" data-io><img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80" alt="Графическая татуировка" loading="lazy"></figure>
-      <figure class="gitem g3" data-cat="blackwork" data-cap="Блэкворк · Плотный закрас" data-io><img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&w=600&q=80" alt="Тату блэкворк" loading="lazy"></figure>
-      <figure class="gitem g4" data-cat="realism" data-cap="Реализм · Лев и львица" data-io><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Тату лев реализм" loading="lazy"></figure>
-      <figure class="gitem g5" data-cat="graphics" data-cap="Микро-реализм &amp; Графика" data-io><img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?auto=format&fit=crop&w=800&q=80" alt="Детализированная тату" loading="lazy"></figure>
-      <figure class="gitem g6" data-cat="piercing" data-cap="Пирсинг · Септум &amp; Хеликс" data-io><img src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?auto=format&fit=crop&w=800&q=80" alt="Профессиональный пирсинг" loading="lazy"></figure>
-      <figure class="gitem g7" data-cat="graphics" data-cap="Мини-тату · Ботаника" data-io><img src="https://images.unsplash.com/photo-1565058525225-780447330756?auto=format&fit=crop&w=600&q=80" alt="Мини тату ботаника" loading="lazy"></figure>
-      <figure class="gitem g8" data-cat="blackwork" data-cap="Орнаментал · Рукав" data-io><img src="https://images.unsplash.com/photo-1590247819200-161485a2777b?auto=format&fit=crop&w=600&q=80" alt="Орнамент рукав" loading="lazy"></figure>
-      <figure class="gitem g9" data-cat="realism" data-cap="Японская классика" data-io><img src="https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?auto=format&fit=crop&w=600&q=80" alt="Японская татуировка" loading="lazy"></figure>
-      <figure class="gitem g10" data-cat="graphics" data-cap="Дракон · Тонкие линии" data-io><img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1000&q=80" alt="Тату дракон тонкие линии" loading="lazy"></figure>
-      <figure class="gitem g11" data-cat="piercing" data-cap="Пирсинг мочек &amp; украшения" data-io><img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=80" alt="Пирсинг ушей" loading="lazy"></figure>
-      <figure class="gitem g12" data-cat="blackwork" data-cap="Кавер-ап · Результат" data-io><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" alt="Перекрытие татуировки" loading="lazy"></figure>
+      <figure class="gitem g1" data-cat="realism" data-cap="Талант студии" data-io><img src="assets/img/ph05.jpg" alt="Татуировка в стиле реализм" loading="lazy"></figure>
+      <figure class="gitem g2" data-cat="graphics" data-cap="Процесс работы" data-io><img src="assets/img/ph06.jpg" alt="Графическая татуировка" loading="lazy"></figure>
+      <figure class="gitem g3" data-cat="blackwork" data-cap="Деталь работы" data-io><img src="assets/img/ph07.jpg" alt="Тату блэкворк" loading="lazy"></figure>
+      <figure class="gitem g4" data-cat="realism" data-cap="Индивидуальный эскиз" data-io><img src="assets/img/ph08.jpg" alt="Тату лев реализм" loading="lazy"></figure>
+      <figure class="gitem g5" data-cat="graphics" data-cap="Микро-детализация" data-io><img src="assets/img/ph09.jpg" alt="Детализированная тату" loading="lazy"></figure>
+      <figure class="gitem g6" data-cat="piercing" data-cap="Студия в работе" data-io><img src="assets/img/ph17.jpg" alt="Профессиональный пирсинг" loading="lazy"></figure>
+      <figure class="gitem g7" data-cat="graphics" data-cap="Мини-тату" data-io><img src="assets/img/ph11.jpg" alt="Мини тату ботаника" loading="lazy"></figure>
+      <figure class="gitem g8" data-cat="blackwork" data-cap="Крупный проект" data-io><img src="assets/img/ph12.jpg" alt="Орнамент рукав" loading="lazy"></figure>
+      <figure class="gitem g9" data-cat="realism" data-cap="Классический сюжет" data-io><img src="assets/img/ph13.jpg" alt="Японская татуировка" loading="lazy"></figure>
+      <figure class="gitem g10" data-cat="graphics" data-cap="Тонкие линии" data-io><img src="assets/img/ph14.jpg" alt="Тату дракон тонкие линии" loading="lazy"></figure>
+      <figure class="gitem g11" data-cat="piercing" data-cap="Пирсинг &amp; украшения" data-io><img src="assets/img/ph15.jpg" alt="Пирсинг ушей" loading="lazy"></figure>
+      <figure class="gitem g12" data-cat="blackwork" data-cap="Cover-Up · результат" data-io><img src="assets/img/ph16.jpg" alt="Перекрытие татуировки" loading="lazy"></figure>
     </div>
     <div style="display:flex;justify-content:center;margin-top:44px" data-io>
       <a class="btn magnet" href="https://vk.com/viptat2" target="_blank" rel="noopener">Больше 500+ работ во ВКонтакте</a>
