@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIP TATTOO — Студия татуировки и пирсинга в Омске | Карла Маркса, 32</title>
+<meta name="description" content="Студия художественной татуировки VIP Tattoo в Омске (пр. Карла Маркса, 32, БЦ Гостиный Двор). Индивидуальные эскизы, кавер-ап, профессиональный пирсинг, неодимовое лазерное удаление. Рейтинг 5.0.">
+<meta property="og:title" content="VIP TATTOO — Студия татуировки и пирсинга в Омске">
+<meta property="og:description" content="Искусство на вашей коже. Рейтинг 5.0 ★ на 2ГИС и Яндекс.Картах. Пр. Карла Маркса, 32 · Ежедневно 11:00–20:00.">
+<meta property="og:type" content="website">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TattooParlor",
+  "name": "Студия татуировки VIP Tattoo Омск",
+  "image": "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=1200&q=80",
+  "telephone": "+7 (900) 000-00-00",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "проспект Карла Маркса, 32, БЦ Гостиный Двор",
+    "addressLocality": "Омск",
+    "addressCountry": "RU"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 54.9754, "longitude": 73.3852 },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "11:00", "closes": "20:00"
+  },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "411", "reviewCount": "265" },
+  "priceRange": "1500–15000 ₽",
+  "sameAs": ["https://vk.com/viptat2", "https://2gis.ru/omsk/branches/282011847695970"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Manrope:wght@400;500;700&family=Pirata+One&display=swap" rel="stylesheet">
+
+<style>
+/* ============ BASE & THEME ============ */
+:root{
+  --ink:#08080a;
+  --ink2:#0d0d10;
+  --panel:#131317;
+  --line:rgba(255,255,255,.09);
+  --line-bright:rgba(255,255,255,.22);
+  --txt:#ececea;
+  --mut:#959590;
+  --dim:#5e5e5a;
+  --accent:#c8aa6e;
+  --steel:linear-gradient(115deg,#f5f5f3 0%,#d0d4da 30%,#888e95 55%,#dcdee2 78%,#9ea4aa 100%);
+  --gold:linear-gradient(115deg,#fceabb 0%,#f8b500 50%,#c8aa6e 100%);
+  --ease:cubic-bezier(.22,.75,.28,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+html:has(#menuToggle:checked){overflow:hidden}
+body{
+  background:var(--ink);
+  color:var(--txt);
+  font-family:'Manrope',system-ui,sans-serif;
+  font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:clip;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+::selection{background:#ececea;color:#08080a}
+
+h1,h2,h3,.disp{font-family:'Oswald',sans-serif;font-weight:500;text-transform:uppercase;line-height:1.02;letter-spacing:.01em}
+.gothic{font-family:'Pirata One',serif;font-weight:400}
+
+/* Film grain noise background overlay */
+body::after{
+  content:"";position:fixed;inset:-50%;z-index:9990;pointer-events:none;opacity:.055;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grain 7s steps(9) infinite;
+}
+@keyframes grain{
+  0%,100%{transform:translate(0,0)}12%{transform:translate(-3%,2%)}25%{transform:translate(2%,-3%)}
+  37%{transform:translate(-2%,-2%)}50%{transform:translate(3%,3%)}62%{transform:translate(-3%,0)}
+  75%{transform:translate(2%,2%)}87%{transform:translate(0,-3%)}
+}
+
+.wrap{width:min(1240px,92vw);margin:0 auto}
+section{position:relative}
+
+/* Section label tag */
+.tag{
+  display:flex;align-items:center;gap:14px;
+  font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--mut);
+  font-weight:500;margin-bottom:26px;
+}
+.tag::before{content:"";width:44px;height:1px;background:linear-gradient(90deg,#9ea4aa,transparent)}
+.tag .n{font-family:'Pirata One',serif;font-size:18px;letter-spacing:0;color:#d0d4da}
+
+.h-xl{font-size:clamp(42px,7.2vw,104px);letter-spacing:.005em}
+.h-lg{font-size:clamp(34px,5.4vw,72px)}
+
+.steel{
+  background:var(--steel);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.gold{
+  background:var(--gold);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+
+/* Background gothic watermark */
+.wm{
+  position:absolute;z-index:0;pointer-events:none;user-select:none;
+  font-family:'Pirata One',serif;color:transparent;
+  -webkit-text-stroke:1px rgba(255,255,255,.05);
+  font-size:clamp(220px,32vw,540px);line-height:.8;
+}
+
+/* Custom Tattoo Needle / Knife Divider */
+.divider{position:relative;height:1px;background:var(--line);margin:0 auto;width:min(1240px,92vw)}
+.divider svg{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-14deg);
+  width:120px;height:auto;color:#787e85;background:var(--ink);padding:0 22px;box-sizing:content-box;
+}
+
+/* ============ HEADER ============ */
+header{
+  position:fixed;inset:0 0 auto 0;z-index:100;
+  transition:transform .5s var(--ease),background .5s;
+}
+header.scrolled{background:rgba(8,8,10,.94);border-bottom:1px solid var(--line)}
+header.hidden{transform:translateY(-100%)}
+.header-in{
+  width:min(1360px,94vw);margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 0;
+}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .logo-icon{
+  width:50px;height:50px;border-radius:10px;
+  border:1px solid var(--line-bright);
+  display:flex;align-items:center;justify-content:center;
+  background:var(--panel);font-family:'Pirata One',serif;font-size:26px;color:var(--txt);
+  box-shadow:0 6px 20px rgba(0,0,0,.4);
+}
+.brand b{font-family:'Oswald';font-size:16px;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+.brand small{display:block;font-size:9px;letter-spacing:.4em;color:var(--mut);text-transform:uppercase}
+nav.desk{display:flex;gap:30px}
+nav.desk a{
+  font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);
+  transition:color .3s;position:relative;padding:6px 0;font-weight:500;
+}
+nav.desk a::after{
+  content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;
+  background:#ececea;transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease);
+}
+nav.desk a:hover{color:var(--txt)}
+nav.desk a:hover::after{transform:scaleX(1);transform-origin:left}
+.head-cta{display:flex;align-items:center;gap:22px}
+.head-cta .ph{font-family:'Oswald';font-size:15px;letter-spacing:.06em;color:var(--txt)}
+.btn{
+  --pad:15px 30px;
+  position:relative;display:inline-flex;align-items:center;gap:11px;
+  padding:var(--pad);border:1px solid rgba(255,255,255,.22);border-radius:999px;
+  font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--txt);
+  overflow:hidden;transition:color .45s var(--ease),border-color .45s;
+  background:transparent;cursor:pointer;white-space:nowrap;
+}
+.btn i{display:inline-flex;width:16px;height:16px}
+.btn i svg{width:100%;height:100%}
+.btn::before{
+  content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;
+  background:#ececea;transform:translateY(103%);transition:transform .45s var(--ease);
+}
+.btn:hover{color:#08080a;border-color:#ececea}
+.btn:hover::before{transform:translateY(0)}
+.btn.solid{background:#ececea;color:#08080a;border-color:#ececea}
+.btn.solid::before{background:#08080a}
+.btn.solid:hover{color:#ececea}
+.btn.sm{--pad:11px 22px;font-size:11px}
+
+/* Mobile burger */
+#menuToggle{display:none}
+.burger{display:none;width:44px;height:44px;flex-direction:column;justify-content:center;gap:7px;cursor:pointer;z-index:130;position:relative}
+.burger span{display:block;height:1.5px;background:#ececea;transition:.4s var(--ease)}
+.burger span:nth-child(1){width:30px}
+.burger span:nth-child(2){width:20px;margin-left:10px}
+html.menu-open .burger span:nth-child(1){transform:translateY(4.3px) rotate(45deg);width:26px}
+html.menu-open .burger span:nth-child(2){transform:translateY(-4.3px) rotate(-45deg);width:26px;margin-left:4px}
+html.menu-open{overflow:hidden}
+
+.mnav{
+  position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;
+  background:#09090b;
+  z-index:120;display:flex;flex-direction:column;justify-content:center;padding:0 8vw;gap:6px;
+  clip-path:circle(0 at calc(100% - 40px) 40px);
+  -webkit-clip-path:circle(0 at calc(100% - 40px) 40px);
+  transition:clip-path .7s var(--ease),-webkit-clip-path .7s var(--ease);
+  visibility:hidden;
+}
+#menuToggle:checked ~ .mnav{
+  clip-path:circle(150% at calc(100% - 40px) 40px);
+  -webkit-clip-path:circle(150% at calc(100% - 40px) 40px);
+  visibility:visible;
+}
+.mnav a.mlink{
+  font-family:'Oswald';font-size:clamp(32px,8vw,50px);text-transform:uppercase;
+  color:var(--txt);padding:6px 0;border-bottom:1px solid var(--line);
+  display:flex;align-items:baseline;gap:18px;
+}
+.mnav a.mlink em{font-family:'Pirata One',serif;font-style:normal;font-size:.5em;color:var(--dim)}
+.mnav .msoc{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+
+/* ============ HERO SECTION ============ */
+.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;position:relative}
+#heroCanvas{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.85}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{
+  width:100%;height:100%;object-fit:cover;
+  filter:grayscale(1) contrast(1.12) brightness(.55);
+  transform:scale(1.12);
+}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 50% 110%, rgba(8,8,10,.2) 0%, transparent 55%),
+    linear-gradient(180deg, rgba(8,8,10,.72) 0%, rgba(8,8,10,.28) 40%, rgba(8,8,10,.88) 88%, #08080a 100%);
+}
+.hero-in{width:min(1360px,94vw);margin:0 auto;padding:150px 0 0}
+.hero .kicker{
+  display:inline-flex;align-items:center;gap:12px;
+  font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:#b9b9b5;font-weight:500;
+  padding:10px 20px;border:1px solid rgba(255,255,255,.16);border-radius:999px;
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);background:rgba(8,8,10,.35);
+}
+.hero .kicker .star{color:#ececea;letter-spacing:.05em}
+.hero h1{
+  margin:34px 0 0;
+  font-size:clamp(54px,11vw,168px);
+  font-weight:600;line-height:.94;letter-spacing:.005em;
+}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line>span{display:inline-block}
+.hero h1 .thin{color:transparent;-webkit-text-stroke:1.5px rgba(236,236,234,.75)}
+.hero-55{
+  position:absolute;right:-1vw;top:6vh;z-index:-1;
+  font-family:'Pirata One',serif;font-size:clamp(220px,36vw,620px);line-height:.8;
+  color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.08);
+}
+.hero-sub{
+  display:flex;flex-wrap:wrap;align-items:center;gap:30px;
+  margin:44px 0 0;
+}
+.hero-sub p{max-width:360px;color:#c9c9c5;font-size:15px;line-height:1.6}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-foot{
+  margin-top:64px;border-top:1px solid rgba(255,255,255,.13);
+  -webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);
+}
+/* Running Marquee Ticker */
+.marquee{overflow:hidden;padding:10px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;gap:0;width:max-content;animation:mq 32s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mq-set{display:flex;align-items:center}
+.mq-set span{
+  font-family:'Oswald';font-size:13px;letter-spacing:.3em;text-transform:uppercase;
+  color:#9d9d99;padding:8px 26px;white-space:nowrap;
+}
+.mq-set svg{width:26px;height:26px;color:#565650;flex:none;transform:rotate(-18deg)}
+
+/* ============ ABOUT SECTION ============ */
+.about{padding:clamp(90px,13vh,160px) 0 clamp(80px,11vh,140px)}
+.about-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:clamp(40px,6vw,100px);align-items:start}
+.about h2{margin-bottom:34px}
+.about h2 .muted{color:var(--dim)}
+.about .lead{font-size:clamp(17px,1.6vw,21px);color:#cfcfcb;max-width:560px;font-weight:400}
+.about .lead b{color:var(--txt);font-weight:700}
+.about .body{margin-top:22px;color:var(--mut);max-width:540px;font-size:15px}
+.stats{
+  display:grid;grid-template-columns:repeat(4,auto);gap:clamp(24px,4vw,64px);
+  margin-top:clamp(44px,6vh,72px);padding-top:38px;border-top:1px solid var(--line);
+  width:fit-content;
+}
+.stat .num{
+  font-family:'Oswald';font-size:clamp(36px,4.4vw,60px);font-weight:500;line-height:1;
+  background:var(--steel);-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.stat .lbl{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);margin-top:10px;font-weight:500}
+.about-photo{position:relative}
+.about-photo .frame{
+  position:relative;overflow:hidden;border-radius:4px;
+  aspect-ratio:3/4;border:1px solid var(--line);
+}
+.about-photo img{
+  width:100%;height:118%;object-fit:cover;
+  filter:grayscale(1) contrast(1.08) brightness(.88);
+}
+.about-photo figcaption{
+  display:flex;justify-content:space-between;gap:12px;
+  margin-top:14px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);
+}
+.about-photo .badge55{
+  position:absolute;top:-34px;left:-30px;z-index:2;
+  font-family:'Pirata One',serif;font-size:110px;line-height:1;color:#ececea;
+  text-shadow:0 12px 44px rgba(0,0,0,.8);
+}
+
+/* ============ SERVICES & PRICING ============ */
+.services{padding:clamp(80px,12vh,150px) 0}
+.services .head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:clamp(40px,7vh,80px)}
+.services .note{max-width:320px;color:var(--mut);font-size:14px}
+.menu-group{margin-bottom:clamp(44px,7vh,72px)}
+.menu-group:last-child{margin-bottom:0}
+.mg-title{
+  display:flex;align-items:baseline;gap:18px;margin-bottom:8px;
+  font-size:clamp(20px,2.4vw,30px);color:var(--txt);
+}
+.mg-title .gn{font-family:'Pirata One',serif;font-size:1.35em;color:transparent;-webkit-text-stroke:1px rgba(236,236,234,.5);line-height:1}
+.mg-title .cnt{font-size:11px;letter-spacing:.24em;color:var(--dim);font-family:'Manrope';font-weight:500;margin-left:auto;text-transform:uppercase}
+.menu{border-top:1px solid var(--line)}
+.mrow{
+  position:relative;display:flex;align-items:baseline;gap:18px;
+  padding:19px 10px;border-bottom:1px solid var(--line);
+  transition:padding .35s var(--ease),background .35s;
+  cursor:default;
+}
+.mrow .nm{
+  font-family:'Oswald';font-size:clamp(16px,1.75vw,22px);font-weight:400;
+  letter-spacing:.03em;text-transform:uppercase;color:#c7c7c3;transition:color .3s;
+  flex:none;
+}
+.mrow .dots{flex:1;border-bottom:1px dotted rgba(255,255,255,.18);transform:translateY(-5px)}
+.mrow .ds{font-size:12px;color:var(--dim);flex:none;letter-spacing:.04em}
+.mrow .pr{
+  font-family:'Oswald';font-size:clamp(16px,1.75vw,22px);font-weight:500;letter-spacing:.04em;
+  color:#a9a9a5;transition:.3s;flex:none;
+}
+.mrow .rz{
+  position:absolute;left:-26px;top:50%;width:20px;height:20px;color:#ececea;
+  transform:translateY(-50%) rotate(-24deg) scale(.4);opacity:0;transition:.35s var(--ease);
+}
+.mrow:hover{background:linear-gradient(90deg,rgba(255,255,255,.035),transparent 70%);padding-left:26px}
+.mrow:hover .nm{color:#f2f2f0}
+.mrow:hover .pr{background:var(--steel);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mrow:hover .rz{opacity:1;transform:translateY(-50%) rotate(-24deg) scale(1);left:2px}
+
+/* Floating cursor preview box */
+.mprev{
+  position:fixed;z-index:60;width:240px;aspect-ratio:3/4;pointer-events:none;
+  overflow:hidden;border-radius:6px;opacity:0;transform:scale(.86) rotate(3deg);
+  transition:opacity .35s var(--ease),transform .45s var(--ease);
+  box-shadow:0 30px 80px rgba(0,0,0,.8);display:none;
+  border:1px solid var(--line-bright);
+}
+.mprev img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1);opacity:0;transition:opacity .3s}
+.mprev img.on{opacity:1}
+.mprev.show{opacity:1;transform:scale(1) rotate(0deg)}
+@media(pointer:fine){.mprev{display:block}}
+
+/* ============ INTERACTIVE COST CALCULATOR ============ */
+.calc-sec{padding:clamp(80px,12vh,140px) 0;background:linear-gradient(180deg,transparent,#0c0c0f 50%,transparent)}
+.calc-card{
+  border:1px solid var(--line);border-radius:8px;padding:clamp(28px,4vw,54px);
+  background:linear-gradient(160deg,#121216,#09090c);
+  box-shadow:0 30px 90px rgba(0,0,0,.6);
+}
+.calc-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(30px,5vw,60px);align-items:center}
+.calc-form{display:flex;flex-direction:column;gap:24px}
+.form-group label{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut);margin-bottom:12px;font-weight:600}
+.options-row{display:flex;flex-wrap:wrap;gap:10px}
+.opt-btn{
+  padding:10px 18px;border:1px solid var(--line);border-radius:6px;background:rgba(255,255,255,.02);
+  color:var(--txt);font-size:13px;letter-spacing:.05em;cursor:pointer;transition:.3s var(--ease);
+}
+.opt-btn:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06)}
+.opt-btn.active{border-color:#ececea;background:#ececea;color:#08080a;font-weight:600}
+.calc-result{
+  border:1px solid var(--line-bright);border-radius:8px;padding:34px;
+  background:rgba(18,18,22,.8);text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;
+}
+.calc-result .res-val{
+  font-family:'Oswald';font-size:clamp(40px,5vw,64px);line-height:1;
+  background:var(--steel);-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.calc-result p{font-size:13px;color:var(--mut);max-width:280px}
+
+/* ============ GALLERY ============ */
+.gallery{padding:clamp(80px,12vh,150px) 0 clamp(60px,9vh,110px)}
+.filter-bar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+.filter-btn{
+  padding:8px 20px;border:1px solid var(--line);border-radius:999px;
+  font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);
+  background:transparent;cursor:pointer;transition:.3s;
+}
+.filter-btn:hover,.filter-btn.active{color:var(--txt);border-color:#ececea;background:rgba(255,255,255,.05)}
+
+.ggrid{
+  display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(10px,1.4vw,20px);
+  grid-auto-rows:clamp(70px,9vw,130px);
+}
+.gitem{position:relative;overflow:hidden;border-radius:4px;background:var(--panel);transition:opacity .4s,transform .4s}
+.gitem.hidden{display:none}
+.gitem img{
+  width:100%;height:100%;object-fit:cover;
+  filter:grayscale(1) brightness(.82) contrast(1.08);
+  transform:scale(1.001);
+  transition:filter .6s var(--ease),transform .8s var(--ease);
+}
+.gitem::after{
+  content:attr(data-cap);position:absolute;left:14px;bottom:10px;z-index:2;
+  font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#ececea;font-weight:600;
+  opacity:0;transform:translateY(8px);transition:.45s var(--ease) .05s;
+}
+.gitem::before{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,transparent 50%,rgba(8,8,10,.82));
+  opacity:0;transition:opacity .45s;
+}
+.gitem:hover img{filter:grayscale(1) brightness(1.05) contrast(1.14);transform:scale(1.06)}
+.gitem:hover::after,.gitem:hover::before{opacity:1;transform:translateY(0)}
+
+.g1{grid-column:1/6;grid-row:span 4}
+.g2{grid-column:6/10;grid-row:span 3}
+.g3{grid-column:10/13;grid-row:span 2}
+.g4{grid-column:10/13;grid-row:span 3}
+.g5{grid-column:6/10;grid-row:span 3}
+.g6{grid-column:1/4;grid-row:span 3}
+.g7{grid-column:4/6;grid-row:span 2}
+.g8{grid-column:10/13;grid-row:span 2}
+.g9{grid-column:1/4;grid-row:span 3}
+.g10{grid-column:4/9;grid-row:span 4}
+.g11{grid-column:9/13;grid-row:span 3}
+.g12{grid-column:9/13;grid-row:span 2}
+
+/* ============ MASTERS SECTION ============ */
+.masters{padding:clamp(80px,12vh,150px) 0}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,26px);margin-top:10px}
+.mcard{
+  position:relative;border:1px solid var(--line);border-radius:6px;
+  padding:clamp(26px,3vw,40px);min-height:290px;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  background:linear-gradient(160deg,#121215,#0c0c0e);
+  transition:border-color .4s;
+}
+.mcard .init{
+  position:absolute;top:-14px;right:10px;
+  font-family:'Pirata One',serif;font-size:150px;line-height:1;
+  color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.08);
+  transition:.5s var(--ease);
+}
+.mcard h3{font-size:clamp(22px,2.2vw,30px);font-weight:500;letter-spacing:.03em}
+.mcard .role{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--mut);margin-top:8px;font-weight:500}
+.mcard .quote{
+  margin-top:16px;font-size:13.5px;color:var(--dim);line-height:1.6;
+  max-height:0;opacity:0;overflow:hidden;transition:.55s var(--ease);
+}
+.mcard .quote::before{content:"— "}
+.mcard:hover{border-color:rgba(255,255,255,.28)}
+.mcard:hover .init{-webkit-text-stroke-color:rgba(255,255,255,.28);transform:rotate(-6deg) translateY(6px)}
+.mcard:hover .quote{max-height:120px;opacity:1}
+@media(hover:none){.mcard .quote{max-height:none;opacity:1}}
+
+/* ============ REVIEWS SECTION ============ */
+.reviews{padding:clamp(80px,12vh,150px) 0}
+.rev-layout{display:grid;grid-template-columns:.9fr 1.4fr;gap:clamp(36px,5vw,80px);align-items:start}
+.rev-score{position:sticky;top:110px}
+.rev-score .big{
+  font-family:'Oswald';font-weight:600;font-size:clamp(110px,14vw,190px);line-height:.9;
+  background:var(--steel);-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.rev-score .stars{font-size:22px;letter-spacing:8px;color:#ececea;margin:16px 0 8px}
+.rev-score .sub{color:var(--mut);font-size:14px;max-width:240px}
+.rev-score .sub b{color:var(--txt)}
+.rev-score .yx{
+  display:inline-flex;align-items:center;gap:9px;margin-top:22px;
+  font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);font-weight:600;
+  padding:11px 20px;border:1px solid var(--line);border-radius:999px;transition:.3s;
+}
+.rev-score .yx:hover{color:var(--txt);border-color:rgba(255,255,255,.3)}
+.rev-list{display:flex;flex-direction:column;gap:14px}
+.rcard{
+  border:1px solid var(--line);border-radius:6px;padding:clamp(22px,2.6vw,34px);
+  background:linear-gradient(160deg,#121215,#0a0a0c);
+  transition:border-color .4s,transform .4s var(--ease);
+}
+.rcard:hover{border-color:rgba(255,255,255,.22);transform:translateX(6px)}
+.rcard .rstars{color:#ececea;letter-spacing:5px;font-size:13px}
+.rcard p{margin-top:14px;color:#c5c5c1;font-size:15px;line-height:1.7}
+.rcard .src{display:flex;justify-content:space-between;gap:10px;margin-top:18px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:500}
+
+/* ============ CONTACTS SECTION ============ */
+.contact{padding:clamp(80px,12vh,150px) 0 clamp(70px,10vh,120px)}
+.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,80px);align-items:stretch}
+.c-info .row{padding:26px 0;border-bottom:1px solid var(--line)}
+.c-info .row:first-child{padding-top:0}
+.c-info .lab{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);font-weight:600;margin-bottom:10px}
+.c-info .val{font-family:'Oswald';font-size:clamp(20px,2.3vw,30px);font-weight:400;letter-spacing:.03em;line-height:1.25}
+.c-info .val a{transition:color .3s}
+.c-info .val a:hover{color:#fff}
+.c-info .val .dim{color:var(--dim)}
+.c-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.c-map{
+  position:relative;border-radius:6px;overflow:hidden;border:1px solid var(--line);
+  min-height:420px;background:var(--panel);
+  filter:grayscale(1) invert(.92) contrast(.9) brightness(1.05);
+}
+.c-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map-note{
+  display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--mut);font-weight:600;border-bottom:1px solid rgba(255,255,255,.18);
+  padding-bottom:3px;transition:color .3s;
+}
+.map-note:hover{color:var(--txt)}
+
+/* ============ FOOTER ============ */
+footer{border-top:1px solid var(--line);padding:44px 0 110px;position:relative;overflow:hidden}
+.f-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.f-brand{display:flex;align-items:center;gap:14px}
+.f-brand .logo-icon{width:46px;height:46px;font-size:22px}
+.f-brand small{display:block;color:var(--dim);font-size:11px;letter-spacing:.14em;margin-top:3px}
+.f-soc{display:flex;gap:10px}
+.f-soc a{
+  width:44px;height:44px;border:1px solid var(--line);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;color:var(--mut);
+  transition:.35s;
+}
+.f-soc a svg{width:17px;height:17px}
+.f-soc a:hover{color:#08080a;background:#ececea;border-color:#ececea;transform:translateY(-3px)}
+.f-copy{width:100%;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;color:var(--dim);font-size:12px;margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
+.f-copy a{color:var(--mut)}
+
+/* Mobile Sticky Bottom CTA */
+.sticky-cta{
+  position:fixed;left:12px;right:12px;bottom:12px;z-index:110;
+  display:none;gap:10px;
+  transform:translateY(140%);transition:transform .5s var(--ease);
+}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta .main{
+  flex:1;display:flex;align-items:center;justify-content:center;gap:10px;
+  background:#ececea;color:#08080a;border-radius:999px;padding:17px;
+  font-family:'Oswald';font-size:14px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;
+  box-shadow:0 14px 44px rgba(0,0,0,.6);
+}
+.sticky-cta .alt{
+  width:56px;height:56px;flex:none;border-radius:50%;
+  background:rgba(18,18,22,.92);border:1px solid rgba(255,255,255,.18);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  display:flex;align-items:center;justify-content:center;color:#ececea;
+}
+.sticky-cta .alt svg{width:21px;height:21px}
+
+/* Responsive queries */
+@media(max-width:1080px){
+  .mgrid{grid-template-columns:repeat(2,1fr)}
+  .calc-grid{grid-template-columns:1fr}
+}
+@media(max-width:920px){
+  nav.desk,.head-cta .ph,.head-cta > .btn{display:none}
+  .burger{display:flex}
+  .about-grid,.rev-layout,.c-grid{grid-template-columns:1fr}
+  .rev-score{position:static}
+  .about-photo{max-width:440px}
+  .stats{grid-template-columns:repeat(2,1fr);width:100%}
+  .ggrid{grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(90px,13vw,140px)}
+  .g1{grid-column:1/7;grid-row:span 4}
+  .g2{grid-column:1/4;grid-row:span 3}
+  .g3{grid-column:4/7;grid-row:span 3}
+  .g4{grid-column:1/4;grid-row:span 3}
+  .g5{grid-column:4/7;grid-row:span 3}
+  .g6{grid-column:1/7;grid-row:span 4}
+  .g7{grid-column:1/4;grid-row:span 3}
+  .g8{grid-column:4/7;grid-row:span 3}
+  .g9{grid-column:1/4;grid-row:span 3}
+  .g10{grid-column:4/7;grid-row:span 3}
+  .g11{grid-column:1/7;grid-row:span 4}
+  .g12{display:none}
+  .sticky-cta{display:flex}
+  footer{padding-bottom:130px}
+}
+@media(max-width:560px){
+  .mgrid{grid-template-columns:1fr}
+  .mcard{min-height:0;padding:26px}
+  .mcard .quote{max-height:none;opacity:1}
+  .hero-sub{gap:20px}
+  .hero h1{font-size:clamp(48px,14vw,84px)}
+  .mrow{flex-wrap:wrap;row-gap:2px}
+  .mrow .ds{display:none}
+  .stats{gap:22px}
+}
+
+/* Scroll reveals (IntersectionObserver fallback) */
+html.anim [data-io]:not(.hero [data-io]),
+html.anim .mrow,
+html.anim .gitem{
+  opacity:0;transform:translateY(34px);
+  transition:opacity .85s var(--ease),transform .85s var(--ease);
+}
+html.anim .is-in,
+html.anim .is-in .mrow{opacity:1!important;transform:none!important}
+html.anim .mrow.is-in{transition:padding .35s var(--ease),background .35s}
+html.anim .divider svg{opacity:0;transform:translate(-50%,-50%) rotate(-100deg);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+html.anim .divider.is-in svg{opacity:1;transform:translate(-50%,-50%) rotate(-14deg)}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  html.anim [data-io],html.anim .mrow,html.anim .gitem,html.anim .divider svg{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header id="siteHeader">
+  <div class="header-in">
+    <a class="brand" href="#top" aria-label="VIP TATTOO — на главную">
+      <div class="logo-icon">VIP</div>
+      <span><b>VIP TATTOO</b><small>Студия татуировки · Омск</small></span>
+    </a>
+    <nav class="desk" aria-label="Основная навигация">
+      <a href="#about">О студии</a>
+      <a href="#services">Услуги & Прайс</a>
+      <a href="#calculator">Калькулятор</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#masters">Мастера</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="head-cta">
+      <a class="ph" href="tel:+79000000000">+7 (900) 000-00-00</a>
+      <a class="btn sm solid magnet" href="https://vk.com/viptat2" target="_blank" rel="noopener">Записаться</a>
+      <label class="burger" for="menuToggle" aria-label="Открыть меню"><span></span><span></span></label>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation -->
+<input type="checkbox" id="menuToggle" aria-hidden="true" tabindex="-1">
+<nav class="mnav" aria-label="Мобильная навигация">
+  <a class="mlink" href="#about"><em>i.</em>О студии</a>
+  <a class="mlink" href="#services"><em>ii.</em>Услуги & Прайс</a>
+  <a class="mlink" href="#calculator"><em>iii.</em>Калькулятор</a>
+  <a class="mlink" href="#gallery"><em>iv.</em>Галерея</a>
+  <a class="mlink" href="#masters"><em>v.</em>Мастера</a>
+  <a class="mlink" href="#reviews"><em>vi.</em>Отзывы</a>
+  <a class="mlink" href="#contact"><em>vii.</em>Контакты</a>
+  <div class="msoc">
+    <a class="btn sm solid" href="https://wa.me/79000000000" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn sm" href="https://vk.com/viptat2" target="_blank" rel="noopener">ВКонтакте</a>
+    <a class="btn sm" href="https://t.me/viptattoo_omsk" target="_blank" rel="noopener">Telegram</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <!-- Interactive Ink Smoke Canvas -->
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=2000&q=85" alt="Процесс создания татуировки в VIP Tattoo Омск" fetchpriority="high">
+  </div>
+  <span class="hero-55" aria-hidden="true">VIP</span>
+  <div class="hero-in">
+    <span class="kicker" data-io><span class="star">5.0&nbsp;★</span> 410+ отзывов на 2ГИС и Яндекс.Картах · Омск</span>
+    <h1>
+      <span class="line"><span>Искусство.</span></span>
+      <span class="line"><span class="thin">На вашей коже.</span></span>
+    </h1>
+    <div class="hero-sub">
+      <p data-io>Художественная татуировка любой сложности, кавер-ап, пирсинг и безошибочное лазерное удаление в <b>БЦ «Гостиный двор»</b> на пр. Карла Маркса, 32.</p>
+      <div class="hero-cta" data-io>
+        <a class="btn solid magnet" href="https://wa.me/79000000000" target="_blank" rel="noopener">
+          <i><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.24.66-1.37 1.26-1.9 1.3-.5.05-1.14.24-3.83-.8-3.24-1.27-5.3-4.58-5.46-4.8-.16-.2-1.3-1.74-1.3-3.32 0-1.58.83-2.36 1.12-2.68.3-.32.64-.4.85-.4h.61c.2 0 .46-.07.72.55.27.64.9 2.2.98 2.36.08.16.13.35.03.56-.1.2-.16.34-.3.52-.16.18-.33.4-.47.54-.16.16-.32.33-.14.64.18.32.8 1.32 1.72 2.13 1.18 1.05 2.17 1.38 2.48 1.53.3.16.49.13.67-.08.18-.2.77-.9.98-1.2.2-.32.4-.26.68-.16.28.1 1.8.85 2.1 1 .32.16.52.24.6.37.07.14.07.78-.16 1.44Z"/></svg></i>
+          Записаться в WhatsApp
+        </a>
+        <a class="btn magnet" href="https://vk.com/viptat2" target="_blank" rel="noopener">
+          <i><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.16 18.5c-5.94 0-9.33-4.07-9.47-10.84h2.98c.1 4.97 2.29 7.08 4.02 7.51V7.66h2.8v4.29c1.71-.19 3.51-2.14 4.12-4.29h2.8c-.47 2.65-2.42 4.6-3.81 5.4 1.39.65 3.61 2.35 4.46 5.44h-3.08c-.66-2.06-2.31-3.66-4.49-3.88v3.88h-.33Z"/></svg></i>
+          ВКонтакте
+        </a>
+      </div>
+    </div>
+    <div class="hero-foot" data-io>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="mq-set">
+            <span>Художественная татуировка</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+            <span>Разработка индивидуальных эскизов</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+            <span>Cover-up / Перекрытие старых тату</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+            <span>Профессиональный пирсинг</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+            <span>Неодимовое лазерное удаление</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+            <span>Перманентный макияж</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+          </div>
+          <div class="mq-set">
+            <span>Художественная татуировка</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+            <span>Разработка индивидуальных эскизов</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+            <span>Cover-up / Перекрытие старых тату</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+            <span>Профессиональный пирсинг</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+            <span>Неодимовое лазерное удаление</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+            <span>Перманентный макияж</span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <span class="wm" style="top:-40px;right:-60px" aria-hidden="true">VIP</span>
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="tag" data-io><span class="n">i.</span> О студии</div>
+        <h2 class="h-lg" data-io>Студия высокого класса<br><span class="muted">в центре Омска</span></h2>
+        <p class="lead" data-io>Мы создаем не просто картинки на коже, а <b>произведения искусства</b>, подчеркивающие ваш характер и анатомию.</p>
+        <p class="body" data-io>VIP Tattoo — это творческая команда опытнейших мастеров Омска. Мы работаем на премиальных немецких пигментах и американском оборудовании. 100% стерильность, одноразовые расходные материалы, индивидуальный подход к каждому эскизу и подробные инструкции по уходу.</p>
+        <div class="stats" data-io>
+          <div class="stat"><div class="num" data-count="5.0">0.0</div><div class="lbl">Рейтинг на<br>2ГИС и Яндексе</div></div>
+          <div class="stat"><div class="num" data-count="12">0</div><div class="lbl">Лет успешной<br>работы в Омске</div></div>
+          <div class="stat"><div class="num" data-count="410">0</div><div class="lbl">Довольных<br>отзывов</div></div>
+          <div class="stat"><div class="num">100%</div><div class="lbl">Стерильность &amp;<br>безопасность</div></div>
+        </div>
+      </div>
+      <figure class="about-photo" data-io>
+        <span class="badge55" aria-hidden="true">55</span>
+        <div class="frame">
+          <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1000&q=80" alt="Интерьер и рабочие места VIP Tattoo Омск" loading="lazy" data-prlx>
+        </div>
+        <figcaption><span>БЦ «Гостиный двор»</span><span>пр. Карла Маркса, 32</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 52L52 12M52 12H32M52 12V32"/><circle cx="52" cy="12" r="2" fill="currentColor"/></svg>
+</div>
+
+<!-- ================= SERVICES & PRICING ================= -->
+<section class="services" id="services">
+  <span class="wm" style="bottom:-80px;left:-80px" aria-hidden="true">OMSK</span>
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <div class="tag" data-io><span class="n">ii.</span> Услуги и прайс</div>
+        <h2 class="h-xl" data-io>Прайс<span class="steel">.</span></h2>
+      </div>
+      <p class="note" data-io>Точная стоимость рассчитывается индивидуально в зависимости от размера, сложности и детальности эскиза.</p>
+    </div>
+
+    <!-- Group 1 -->
+    <div class="menu-group" data-group="tattoo">
+      <div class="mg-title" data-io><span class="gn">I</span><h3>Художественная татуировка</h3><span class="cnt">6 позиций</span></div>
+      <ul class="menu" data-io>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Мини-татуировка (до 5 см)</span><span class="dots"></span><span class="ds">надписи, символы, контур</span><span class="pr">от 2 500 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Татуировка средней сложности (10-15 см)</span><span class="dots"></span><span class="ds">детализированная графика</span><span class="pr">от 5 000 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Масштабная татуировка / Сеанс</span><span class="dots"></span><span class="ds">рукав, спина, блэкворк (3-4 часа)</span><span class="pr">от 10 000 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Разработка индивидуального эскиза</span><span class="dots"></span><span class="ds">с примеркой на анатомию</span><span class="pr">Бесплатно при сеансе</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Cover-Up / Перекрытие старых татуировок</span><span class="dots"></span><span class="ds">маскировка шрамов и партаков</span><span class="pr">от 6 000 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Коррекция &amp; реставрация</span><span class="dots"></span><span class="ds">обновление яркости и цвета</span><span class="pr">от 3 000 ₽</span></li>
+      </ul>
+    </div>
+
+    <!-- Group 2 -->
+    <div class="menu-group" data-group="piercing">
+      <div class="mg-title" data-io><span class="gn">II</span><h3>Профессиональный пирсинг</h3><span class="cnt">5 позиций</span></div>
+      <ul class="menu" data-io>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Пирсинг мочки / Хряща уха (Хеликс, Трагус)</span><span class="dots"></span><span class="ds">стерильной иглой</span><span class="pr">1 500 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Пирсинг носа (Септум, Крыло)</span><span class="dots"></span><span class="ds">быстро и безболезненно</span><span class="pr">1 800 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Пирсинг губы / Языка / Брови</span><span class="dots"></span><span class="ds">с подбором длины украшения</span><span class="pr">2 000 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Пирсинг пупка / Сосков</span><span class="dots"></span><span class="ds">анатомическая посадка</span><span class="pr">2 200 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Замена украшения / Даунсайз</span><span class="dots"></span><span class="ds">обработка и консультация</span><span class="pr">600 ₽</span></li>
+      </ul>
+    </div>
+
+    <!-- Group 3 -->
+    <div class="menu-group" data-group="laser">
+      <div class="mg-title" data-io><span class="gn">III</span><h3>Лазерное удаление &amp; Перманент</h3><span class="cnt">5 позиций</span></div>
+      <ul class="menu" data-io>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Лазерное удаление тату (Сеанс до 5 см²)</span><span class="dots"></span><span class="ds">неодимовый лазер без рубцов</span><span class="pr">1 500 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Осветление татуировки под Cover-Up</span><span class="dots"></span><span class="ds">подготовка к новому рисунку</span><span class="pr">от 2 000 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Перманентный макияж бровей (Пудровое напыление)</span><span class="dots"></span><span class="ds">натуральный эффект</span><span class="pr">5 500 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Перманентный макияж губ (Акварельная техника)</span><span class="dots"></span><span class="ds">сочный стойкий цвет</span><span class="pr">6 000 ₽</span></li>
+        <li class="mrow"><svg class="rz" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 52L52 12M52 12H32M52 12V32"/></svg><span class="nm">Заполнение межресничного пространства</span><span class="dots"></span><span class="ds">выразительный взгляд</span><span class="pr">4 500 ₽</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Floating preview images following cursor -->
+  <div class="mprev" aria-hidden="true">
+    <img data-for="tattoo"   src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=600&q=80" alt="">
+    <img data-for="piercing" src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?auto=format&fit=crop&w=600&q=80" alt="">
+    <img data-for="laser"    src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&w=600&q=80" alt="">
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 52L52 12M52 12H32M52 12V32"/><circle cx="52" cy="12" r="2" fill="currentColor"/></svg>
+</div>
+
+<!-- ================= INTERACTIVE CALCULATOR ================= -->
+<section class="calc-sec" id="calculator">
+  <div class="wrap">
+    <div class="tag" data-io><span class="n">iii.</span> Интерактив</div>
+    <h2 class="h-xl" data-io style="margin-bottom:clamp(30px,5vh,60px)">Рассчитать<br>стоимость<span class="steel">.</span></h2>
+    
+    <div class="calc-card" data-io>
+      <div class="calc-grid">
+        <div class="calc-form">
+          <div class="form-group">
+            <label>Тип услуги</label>
+            <div class="options-row" id="typeGroup">
+              <button type="button" class="opt-btn active" data-val="tattoo" data-price="3500">Татуировка</button>
+              <button type="button" class="opt-btn" data-val="coverup" data-price="5000">Cover-Up / Перекрытие</button>
+              <button type="button" class="opt-btn" data-val="piercing" data-price="1800">Пирсинг</button>
+              <button type="button" class="opt-btn" data-val="laser" data-price="2000">Лазерное удаление</button>
+            </div>
+          </div>
+
+          <div class="form-group" id="sizeSection">
+            <label>Примерный размер</label>
+            <div class="options-row" id="sizeGroup">
+              <button type="button" class="opt-btn active" data-mult="1">До 5 см (Мини)</button>
+              <button type="button" class="opt-btn" data-mult="1.8">5–10 см (Средняя)</button>
+              <button type="button" class="opt-btn" data-mult="2.8">10–20 см (Крупная)</button>
+              <button type="button" class="opt-btn" data-mult="4.2">Сеанс (Рукав / Спина)</button>
+            </div>
+          </div>
+
+          <div class="form-group" id="detailSection">
+            <label>Детализация и цвет</label>
+            <div class="options-row" id="detailGroup">
+              <button type="button" class="opt-btn active" data-mult="1">Графика / Ч/Б (Контуры)</button>
+              <button type="button" class="opt-btn" data-mult="1.35">Цветная тату / Реализм</button>
+              <button type="button" class="opt-btn" data-mult="1.6">Сложный многосеансовый проект</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-result">
+          <span style="font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--mut)">Ориентировочно:</span>
+          <div class="res-val" id="calcPrice">3 500 ₽</div>
+          <p>Окончательную цену мастер назовет после просмотра вашего эскиза и примерки.</p>
+          <a class="btn solid magnet" id="calcCta" href="https://wa.me/79000000000?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%80%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D0%BB%20%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%BD%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%B5" target="_blank" rel="noopener">Отправить эскиз на просчет</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="tag" data-io><span class="n">iv.</span> Портфолио</div>
+    <h2 class="h-xl" data-io style="margin-bottom:24px">Работы<br>студии<span class="steel">.</span></h2>
+    
+    <div class="filter-bar" data-io>
+      <button type="button" class="filter-btn active" data-filter="all">Все работы</button>
+      <button type="button" class="filter-btn" data-filter="realism">Реализм</button>
+      <button type="button" class="filter-btn" data-filter="graphics">Графика</button>
+      <button type="button" class="filter-btn" data-filter="blackwork">Блэкворк</button>
+      <button type="button" class="filter-btn" data-filter="piercing">Пирсинг</button>
+    </div>
+
+    <div class="ggrid">
+      <figure class="gitem g1" data-cat="realism" data-cap="Реализм · Черно-белый портрет" data-io><img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=1000&q=80" alt="Татуировка в стиле реализм" loading="lazy"></figure>
+      <figure class="gitem g2" data-cat="graphics" data-cap="Графика · Геометрия и орнамент" data-io><img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80" alt="Графическая татуировка" loading="lazy"></figure>
+      <figure class="gitem g3" data-cat="blackwork" data-cap="Блэкворк · Плотный закрас" data-io><img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&w=600&q=80" alt="Тату блэкворк" loading="lazy"></figure>
+      <figure class="gitem g4" data-cat="realism" data-cap="Реализм · Лев и львица" data-io><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Тату лев реализм" loading="lazy"></figure>
+      <figure class="gitem g5" data-cat="graphics" data-cap="Микро-реализм &amp; Графика" data-io><img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?auto=format&fit=crop&w=800&q=80" alt="Детализированная тату" loading="lazy"></figure>
+      <figure class="gitem g6" data-cat="piercing" data-cap="Пирсинг · Септум &amp; Хеликс" data-io><img src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?auto=format&fit=crop&w=800&q=80" alt="Профессиональный пирсинг" loading="lazy"></figure>
+      <figure class="gitem g7" data-cat="graphics" data-cap="Мини-тату · Ботаника" data-io><img src="https://images.unsplash.com/photo-1565058525225-780447330756?auto=format&fit=crop&w=600&q=80" alt="Мини тату ботаника" loading="lazy"></figure>
+      <figure class="gitem g8" data-cat="blackwork" data-cap="Орнаментал · Рукав" data-io><img src="https://images.unsplash.com/photo-1590247819200-161485a2777b?auto=format&fit=crop&w=600&q=80" alt="Орнамент рукав" loading="lazy"></figure>
+      <figure class="gitem g9" data-cat="realism" data-cap="Японская классика" data-io><img src="https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?auto=format&fit=crop&w=600&q=80" alt="Японская татуировка" loading="lazy"></figure>
+      <figure class="gitem g10" data-cat="graphics" data-cap="Дракон · Тонкие линии" data-io><img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1000&q=80" alt="Тату дракон тонкие линии" loading="lazy"></figure>
+      <figure class="gitem g11" data-cat="piercing" data-cap="Пирсинг мочек &amp; украшения" data-io><img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=80" alt="Пирсинг ушей" loading="lazy"></figure>
+      <figure class="gitem g12" data-cat="blackwork" data-cap="Кавер-ап · Результат" data-io><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" alt="Перекрытие татуировки" loading="lazy"></figure>
+    </div>
+    <div style="display:flex;justify-content:center;margin-top:44px" data-io>
+      <a class="btn magnet" href="https://vk.com/viptat2" target="_blank" rel="noopener">Больше 500+ работ во ВКонтакте</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MASTERS ================= -->
+<section class="masters" id="masters">
+  <span class="wm" style="top:-60px;right:-40px" aria-hidden="true">ART</span>
+  <div class="wrap">
+    <div class="tag" data-io><span class="n">v.</span> Команда</div>
+    <h2 class="h-xl" data-io style="margin-bottom:clamp(36px,6vh,64px)">Мастера<span class="steel">.</span></h2>
+    <div class="mgrid">
+      <article class="mcard" data-io>
+        <span class="init" aria-hidden="true">V</span>
+        <h3>Виталий Гусев</h3>
+        <div class="role">Основатель &amp; Ведущий тату-мастер</div>
+        <p class="quote">Специалист по черно-белому реализму, крупным проектам и бескомпромиссному Cover-Up.</p>
+      </article>
+      <article class="mcard" data-io>
+        <span class="init" aria-hidden="true">E</span>
+        <h3>Елена Кирушок</h3>
+        <div class="role">Тату-мастер (Графика &amp; Традишнл)</div>
+        <p class="quote">Ювелирные линии, виртуозная графика и кастомные орнаментальные эскизы.</p>
+      </article>
+      <article class="mcard" data-io>
+        <span class="init" aria-hidden="true">A</span>
+        <h3>Анастасия Ивлева</h3>
+        <div class="role">Тату-мастер (Мини-тату &amp; Ботаника)</div>
+        <p class="quote">Нежнейшая микро-татуировка, ботанические иллюстрации и надписи каллиграфией.</p>
+      </article>
+      <article class="mcard" data-io>
+        <span class="init" aria-hidden="true">O</span>
+        <h3>Ольга Шарова</h3>
+        <div class="role">Мастер перманентного макияжа &amp; Тату</div>
+        <p class="quote">Естественное пудровое напыление бровей и акварельная техника губ.</p>
+      </article>
+      <article class="mcard" data-io>
+        <span class="init" aria-hidden="true">E</span>
+        <h3>Ева Аверина</h3>
+        <div class="role">Мастер пирсинга</div>
+        <p class="quote">Абсолютно стерильный пирсинг любой сложности с идеальной заживляемостью.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="tag" data-io><span class="n">vi.</span> Отзывы</div>
+    <div class="rev-layout">
+      <div class="rev-score" data-io>
+        <div class="big">5.0</div>
+        <div class="stars" aria-label="Оценка 5 из 5">★★★★★</div>
+        <p class="sub">Более <b>410 оценок</b> и отзывов на 2ГИС и Яндекс.Картах.</p>
+        <a class="yx" href="https://2gis.ru/omsk/branches/282011847695970" target="_blank" rel="noopener">Читать 2ГИС отзывы →</a>
+      </div>
+      <div class="rev-list">
+        <article class="rcard" data-io>
+          <div class="rstars" aria-hidden="true">★★★★★</div>
+          <p>Делал масштабный рукав у Виталия. Профессионализм на высочайшем уровне, стерильность безупречная. Эскиз разработали прямо под мою руку, перекрыли старый партак так, будто его и не было!</p>
+          <div class="src"><span>О мастере Виталии</span><span>2ГИС</span></div>
+        </article>
+        <article class="rcard" data-io>
+          <div class="rstars" aria-hidden="true">★★★★★</div>
+          <p>Елена — просто волшебница графика! Сделала тончайшие контуры, всё зажило без единого коррекционного подкраса. В студии атмосфера просто огонь.</p>
+          <div class="src"><span>О мастере Елене</span><span>Яндекс.Карты</span></div>
+        </article>
+        <article class="rcard" data-io>
+          <div class="rstars" aria-hidden="true">★★★★★</div>
+          <p>Приходила на пирсинг септума к Еве. Прокол сделала мгновенно и без боли, всё подробнейше объяснила по уходу. Студия супер чистая и стильная.</p>
+          <div class="src"><span>О мастере Еве</span><span>2ГИС</span></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTS ================= -->
+<section class="contact" id="contact">
+  <span class="wm" style="bottom:-60px;right:-30px" aria-hidden="true">55</span>
+  <div class="wrap">
+    <div class="tag" data-io><span class="n">vii.</span> Контакты</div>
+    <h2 class="h-xl" data-io style="margin-bottom:clamp(36px,6vh,70px)">Заходи<span class="steel">.</span></h2>
+    <div class="c-grid">
+      <div class="c-info">
+        <div class="row" data-io>
+          <div class="lab">Адрес студии</div>
+          <div class="val">проспект Карла Маркса, 32<br><span class="dim">БЦ «Гостиный двор», 3 этаж · Омск</span></div>
+        </div>
+        <div class="row" data-io>
+          <div class="lab">Время работы</div>
+          <div class="val">Ежедневно <span class="dim">·</span> 11:00 – 20:00</div>
+        </div>
+        <div class="row" data-io>
+          <div class="lab">Запись &amp; Консультации</div>
+          <div class="val"><a href="tel:+79000000000">+7 (900) 000-00-00</a></div>
+        </div>
+        <div class="c-btns" data-io>
+          <a class="btn solid magnet" href="https://wa.me/79000000000" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn magnet" href="https://vk.com/viptat2" target="_blank" rel="noopener">ВКонтакте</a>
+          <a class="btn magnet" href="https://t.me/viptattoo_omsk" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+      <div data-io>
+        <div class="c-map">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=73.385200%2C54.975400&z=16&pt=73.385200%2C54.975400" loading="lazy" title="Студия VIP Tattoo на карте Омска" allowfullscreen></iframe>
+        </div>
+        <a class="map-note" href="https://2gis.ru/omsk/branches/282011847695970" target="_blank" rel="noopener">Открыть на 2ГИС — 5.0 ★, 410+ оценок →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <a class="f-brand" href="#top">
+        <div class="logo-icon">VIP</div>
+        <span><b class="disp" style="font-size:15px;letter-spacing:.22em">VIP TATTOO</b><small>студия татуировки · Омск</small></span>
+      </a>
+      <div class="f-soc">
+        <a href="https://wa.me/79000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.24.66-1.37 1.26-1.9 1.3-.5.05-1.14.24-3.83-.8-3.24-1.27-5.3-4.58-5.46-4.8-.16-.2-1.3-1.74-1.3-3.32 0-1.58.83-2.36 1.12-2.68.3-.32.64-.4.85-.4h.61c.2 0 .46-.07.72.55.27.64.9 2.2.98 2.36.08.16.13.35.03.56-.1.2-.16.34-.3.52-.16.18-.33.4-.47.54-.16.16-.32.33-.14.64.18.32.8 1.32 1.72 2.13 1.18 1.05 2.17 1.38 2.48 1.53.3.16.49.13.67-.08.18-.2.77-.9.98-1.2.2-.32.4-.26.68-.16.28.1 1.8.85 2.1 1 .32.16.52.24.6.37.07.14.07.78-.16 1.44Z"/></svg></a>
+        <a href="https://vk.com/viptat2" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 18.5c-5.94 0-9.33-4.07-9.47-10.84h2.98c.1 4.97 2.29 7.08 4.02 7.51V7.66h2.8v4.29c1.71-.19 3.51-2.14 4.12-4.29h2.8c-.47 2.65-2.42 4.6-3.81 5.4 1.39.65 3.61 2.35 4.46 5.44h-3.08c-.66-2.06-2.31-3.66-4.49-3.88v3.88h-.33Z"/></svg></a>
+        <a href="tel:+79000000000" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.27a2 2 0 0 1 2.1-.45c.9.34 1.85.57 2.8.7a2 2 0 0 1 1.7 2.03Z"/></svg></a>
+      </div>
+    </div>
+    <div class="f-copy">
+      <span>© 2026 Студия татуировки «VIP Tattoo», Омск</span>
+      <span>5.0 ★ на <a href="https://2gis.ru/omsk/branches/282011847695970" target="_blank" rel="noopener">2ГИС</a> и Яндекс.Картах</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile Sticky Bottom CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="main" href="https://wa.me/79000000000" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.24.66-1.37 1.26-1.9 1.3-.5.05-1.14.24-3.83-.8-3.24-1.27-5.3-4.58-5.46-4.8-.16-.2-1.3-1.74-1.3-3.32 0-1.58.83-2.36 1.12-2.68.3-.32.64-.4.85-.4h.61c.2 0 .46-.07.72.55.27.64.9 2.2.98 2.36.08.16.13.35.03.56-.1.2-.16.34-.3.52-.16.18-.33.4-.47.54-.16.16-.32.33-.14.64.18.32.8 1.32 1.72 2.13 1.18 1.05 2.17 1.38 2.48 1.53.3.16.49.13.67-.08.18-.2.77-.9.98-1.2.2-.32.4-.26.68-.16.28.1 1.8.85 2.1 1 .32.16.52.24.6.37.07.14.07.78-.16 1.44Z"/></svg>
+    Записаться
+  </a>
+  <a class="alt" href="https://vk.com/viptat2" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 18.5c-5.94 0-9.33-4.07-9.47-10.84h2.98c.1 4.97 2.29 7.08 4.02 7.51V7.66h2.8v4.29c1.71-.19 3.51-2.14 4.12-4.29h2.8c-.47 2.65-2.42 4.6-3.81 5.4 1.39.65 3.61 2.35 4.46 5.44h-3.08c-.66-2.06-2.31-3.66-4.49-3.88v3.88h-.33Z"/></svg></a>
+  <a class="alt" href="tel:+79000000000" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.27a2 2 0 0 1 2.1-.45c.9.34 1.85.57 2.8.7a2 2 0 0 1 1.7 2.03Z"/></svg></a>
+</div>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const fine = matchMedia('(pointer:fine)').matches;
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- Header scroll behavior ---------- */
+  const header = document.getElementById('siteHeader');
+  let lastY = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY;
+    header.classList.toggle('scrolled', y > 40);
+    header.classList.toggle('hidden', y > 500 && y > lastY);
+    document.getElementById('stickyCta').classList.toggle('show', y > innerHeight * .7);
+    lastY = y;
+  }, {passive:true});
+
+  /* ---------- Mobile menu toggle ---------- */
+  const mt = document.getElementById('menuToggle');
+  const syncMenu = () => document.documentElement.classList.toggle('menu-open', mt.checked);
+  mt.addEventListener('change', syncMenu);
+  document.querySelectorAll('.mnav a').forEach(a =>
+    a.addEventListener('click', () => { mt.checked = false; syncMenu(); }));
+
+  /* ---------- Interactive Ink Smoke Canvas in Hero ---------- */
+  const canvas = document.getElementById('heroCanvas');
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+    
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    const particles = [];
+    const maxParticles = fine ? 45 : 20;
+
+    class Particle {
+      constructor(x, y) {
+        this.x = x || Math.random() * width;
+        this.y = y || Math.random() * height;
+        this.size = Math.random() * 80 + 20;
+        this.vx = (Math.random() - 0.5) * 0.4;
+        this.vy = (Math.random() - 0.5) * 0.4 - 0.2;
+        this.alpha = Math.random() * 0.25 + 0.05;
+      }
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        this.size += 0.2;
+        this.alpha -= 0.001;
+        if (this.alpha <= 0 || this.size > 220) {
+          this.x = Math.random() * width;
+          this.y = height + 50;
+          this.size = Math.random() * 60 + 20;
+          this.alpha = Math.random() * 0.25 + 0.05;
+        }
+      }
+      draw() {
+        ctx.save();
+        ctx.globalAlpha = this.alpha;
+        const grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size);
+        grad.addColorStop(0, 'rgba(200, 170, 110, 0.4)');
+        grad.addColorStop(0.5, 'rgba(255, 255, 255, 0.1)');
+        grad.addColorStop(1, 'rgba(8, 8, 10, 0)');
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    for (let i = 0; i < maxParticles; i++) {
+      particles.push(new Particle());
+    }
+
+    if (fine) {
+      window.addEventListener('mousemove', e => {
+        if (Math.random() > 0.4) {
+          particles.push(new Particle(e.clientX, e.clientY));
+          if (particles.length > maxParticles + 25) particles.shift();
+        }
+      });
+    }
+
+    function animateCanvas() {
+      ctx.clearRect(0, 0, width, height);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animateCanvas);
+    }
+    animateCanvas();
+  }
+
+  /* ---------- Magnetic buttons ---------- */
+  if (fine && !reduced) {
+    document.querySelectorAll('.magnet').forEach(btn => {
+      btn.addEventListener('mousemove', e => {
+        const r = btn.getBoundingClientRect();
+        const x = e.clientX - r.left - r.width/2, y = e.clientY - r.top - r.height/2;
+        btn.style.transform = `translate(${x*.22}px,${y*.32}px)`;
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transition = 'transform .5s cubic-bezier(.22,.75,.28,1)';
+        btn.style.transform = '';
+        setTimeout(() => btn.style.transition = '', 500);
+      });
+    });
+  }
+
+  /* ---------- Services floating preview ---------- */
+  if (fine) {
+    const prev = document.querySelector('.mprev');
+    const imgs = prev ? prev.querySelectorAll('img') : [];
+    let px = 0, py = 0, tx = 0, ty = 0;
+    addEventListener('mousemove', e => { tx = e.clientX + 30; ty = e.clientY - 140; });
+    (function follow(){
+      px += (tx - px) * .12; py += (ty - py) * .12;
+      if (prev) {
+        prev.style.left = px + 'px'; prev.style.top = py + 'px';
+      }
+      requestAnimationFrame(follow);
+    })();
+    document.querySelectorAll('.menu-group').forEach(gr => {
+      gr.addEventListener('mouseenter', () => {
+        imgs.forEach(i => i.classList.toggle('on', i.dataset.for === gr.dataset.group));
+        if (prev) prev.classList.add('show');
+      });
+      gr.addEventListener('mouseleave', () => prev && prev.classList.remove('show'));
+    });
+  }
+
+  /* ---------- Interactive Price Calculator ---------- */
+  const typeBtns = document.querySelectorAll('#typeGroup .opt-btn');
+  const sizeBtns = document.querySelectorAll('#sizeGroup .opt-btn');
+  const detailBtns = document.querySelectorAll('#detailGroup .opt-btn');
+  const priceDisplay = document.getElementById('calcPrice');
+  const sizeSec = document.getElementById('sizeSection');
+  const detailSec = document.getElementById('detailSection');
+
+  function calculatePrice() {
+    const activeType = document.querySelector('#typeGroup .opt-btn.active');
+    const activeSize = document.querySelector('#sizeGroup .opt-btn.active');
+    const activeDetail = document.querySelector('#detailGroup .opt-btn.active');
+
+    const basePrice = parseFloat(activeType.dataset.price || 3500);
+    const typeVal = activeType.dataset.val;
+
+    if (typeVal === 'piercing' || typeVal === 'laser') {
+      if (sizeSec) sizeSec.style.display = 'none';
+      if (detailSec) detailSec.style.display = 'none';
+      priceDisplay.textContent = basePrice.toLocaleString('ru-RU') + ' ₽';
+    } else {
+      if (sizeSec) sizeSec.style.display = 'block';
+      if (detailSec) detailSec.style.display = 'block';
+
+      const sizeMult = parseFloat(activeSize ? activeSize.dataset.mult : 1);
+      const detailMult = parseFloat(activeDetail ? activeDetail.dataset.mult : 1);
+
+      const total = Math.round((basePrice * sizeMult * detailMult) / 500) * 500;
+      priceDisplay.textContent = total.toLocaleString('ru-RU') + ' ₽';
+    }
+  }
+
+  function setupToggle(btns) {
+    btns.forEach(b => {
+      b.addEventListener('click', () => {
+        btns.forEach(other => other.classList.remove('active'));
+        b.classList.add('active');
+        calculatePrice();
+      });
+    });
+  }
+
+  setupToggle(typeBtns);
+  setupToggle(sizeBtns);
+  setupToggle(detailBtns);
+
+  /* ---------- Gallery Filtering ---------- */
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gitem');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      galleryItems.forEach(item => {
+        if (filter === 'all' || item.dataset.cat === filter) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  /* ---------- Animated Number Counters ---------- */
+  const counters = document.querySelectorAll('[data-count]');
+  const cio = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    cio.unobserve(en.target);
+    const el = en.target, target = parseFloat(el.dataset.count);
+    const dec = el.dataset.count.includes('.') ? 1 : 0;
+    const t0 = performance.now(), dur = 1400;
+    (function tick(t){
+      const p = Math.min((t - t0)/dur, 1), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = (target * e).toFixed(dec);
+      if (p < 1) requestAnimationFrame(tick);
+    })(t0);
+  }), {threshold:.6});
+  counters.forEach(c => cio.observe(c));
+
+  /* ---------- GSAP Animations ---------- */
+  if (window.gsap && !reduced) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.timeline({defaults:{ease:'power4.out'}})
+      .from('.hero-bg img', {scale:1.28, duration:2.2, ease:'power2.out'}, 0)
+      .from('.hero h1 .line > span', {yPercent:110, duration:1.15, stagger:.14}, .25)
+      .from('.hero .kicker', {y:24, autoAlpha:0, duration:.9}, .55)
+      .from('.hero-sub > *', {y:34, autoAlpha:0, duration:.9, stagger:.12}, .8)
+      .from('.hero-foot', {autoAlpha:0, duration:1}, 1.1)
+      .from('.hero-55', {autoAlpha:0, x:80, duration:1.6, ease:'power2.out'}, .5);
+
+    gsap.to('.hero-bg img', {
+      yPercent:14, ease:'none',
+      scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:true}
+    });
+    gsap.to('.hero-55', {
+      yPercent:-30, ease:'none',
+      scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:true}
+    });
+
+    gsap.utils.toArray('[data-prlx]').forEach(img => {
+      gsap.fromTo(img, {yPercent:-9}, {
+        yPercent:9, ease:'none',
+        scrollTrigger:{trigger:img.closest('.frame') || img, start:'top bottom', end:'bottom top', scrub:true}
+      });
+    });
+
+    gsap.utils.toArray('.wm').forEach(wm => {
+      gsap.to(wm, {
+        yPercent:-18, ease:'none',
+        scrollTrigger:{trigger:wm.parentElement, start:'top bottom', end:'bottom top', scrub:true}
+      });
+    });
+  }
+
+  /* ---------- Scroll Reveals (IntersectionObserver) ---------- */
+  if ('IntersectionObserver' in window && !reduced) {
+    document.documentElement.classList.add('anim');
+    const targets = [...document.querySelectorAll('[data-io],.mrow,.gitem,.divider')]
+      .filter(el => !el.closest('.hero'));
+
+    document.querySelectorAll('.menu').forEach(m =>
+      [...m.querySelectorAll('.mrow')].forEach((r, i) => r.style.transitionDelay = (i * .05) + 's'));
+    document.querySelectorAll('.gitem').forEach((g, i) => g.style.transitionDelay = ((i % 4) * .08) + 's');
+
+    const rio = new IntersectionObserver(entries => entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      rio.unobserve(en.target);
+      en.target.classList.add('is-in');
+      setTimeout(() => { en.target.style.transitionDelay = ''; }, 1400);
+    }), {threshold: .12, rootMargin: '0px 0px -6% 0px'});
+    targets.forEach(t => rio.observe(t));
+  }
+});
+</script>
+</body>
+</html>
